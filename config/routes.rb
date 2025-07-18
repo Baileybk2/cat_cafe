@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+  # this rule maps requests for the URL /static_pages/home to the home action in the Static Pages Controller
+  get "static_pages/home"
+  get "static_pages/help"
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
   # Reveal health status on /up that returns 200 if the app boots with no exceptions, otherwise 500.

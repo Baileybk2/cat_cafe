@@ -46,9 +46,12 @@ gem "active_storage_validations"
 gem "bcrypt"
 gem "faker"
 gem "will_paginate"
+gem "bootstrap", "~> 5.3.0"
+gem "jquery-rails"
 gem "bootstrap-will_paginate"
-gem "bootstrap-sass"
-gem "sass-rails"
+gem "dartsass-rails"
+gem "haml-rails"
+gem "html2haml"
 
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem

@@ -5,6 +5,7 @@ RSpec.describe "StaticPages", type: :request do
     it "returns http success" do
       get "/home"
       expect(response).to have_http_status(:success)
+      expect(response.body).to include("<title>Home</title>")
     end
   end
 
@@ -12,6 +13,7 @@ RSpec.describe "StaticPages", type: :request do
     it "returns http success" do
       get "/help"
       expect(response).to have_http_status(:success)
+      expect(response.body).to include("<title>Help</title>")
     end
   end
 
@@ -19,6 +21,7 @@ RSpec.describe "StaticPages", type: :request do
     it "returns http success" do
       get "/about"
       expect(response).to have_http_status(:success)
+      expect(response.body).to include("<title>About</title>")
     end
   end
 end

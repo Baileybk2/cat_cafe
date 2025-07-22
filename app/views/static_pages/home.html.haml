@@ -1,3 +1,11 @@
-%h1 Cat Cafe
-%p This is the home page for Cat Cafe! 
-An online platform for idea sharing <3 
+!!!
+%html
+  %body
+    - provide(:title, "Home")
+    %title
+      = yield(:title)
+    %h1 Cat Cafe
+    %p
+      This is the home page for Cat Cafe!
+    %p
+      An online platform for idea sharing <3  

@@ -1,2 +1,8 @@
-%h1 Help
-%p Having trouble with the platform? Help is on the way! 
+!!! 
+%html 
+  %body
+    - provide(:title, "Help")
+    %title
+      = yield(:title)
+    %h1 Help
+    %p Having trouble with the platform? Help is on the way! 

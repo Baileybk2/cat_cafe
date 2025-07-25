@@ -17,4 +17,13 @@
     %link{:href => "/icon.png", :rel => "apple-touch-icon"}/
     
   %body
-    = yield
+    %header.navbar.navbar-fixed-top.navbar-inverse
+      .container
+        = link_to "cat cafe", '#', id: "logo"
+        %nav
+          %ul.nav.navbar-nav.navbar-right
+            %li= link_to "Home",   '#'
+            %li= link_to "Help",   '#'
+            %li= link_to "Log in", '#'
+    .container
+      = yield

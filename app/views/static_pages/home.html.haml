@@ -4,8 +4,11 @@
     - provide(:title, "Home")
     %title
       = yield(:title)
-    %h1 Cat Cafe
-    %p
-      This is the home page for Cat Cafe!
-    %p
-      An online platform for idea sharing <3  
+    .center.jumbotron
+      %h1 Cat Cafe
+      %p
+        This is the home page for Cat Cafe!
+      %p
+        An online platform for idea sharing <3
+      = link_to "Sign up now!", '#', class: "btn btn-lg btn-primary"
+      = image_tag '/kitten.jpg', alt: "Cute kitten"

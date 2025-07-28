@@ -52,6 +52,7 @@ gem "bootstrap-will_paginate"
 gem "dartsass-rails"
 gem "haml-rails"
 gem "html2haml"
+gem "foreman"
 
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem

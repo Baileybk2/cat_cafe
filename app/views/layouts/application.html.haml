@@ -10,30 +10,15 @@
     = csp_meta_tag
     = stylesheet_link_tag :app, "data-turbo-track": "reload"
     = javascript_importmap_tags
-    
+
     = yield :head
     %link{:href => "/icon.png", :rel => "icon", :type => "image/png"}/
     %link{:href => "/icon.svg", :rel => "icon", :type => "image/svg+xml"}/
     %link{:href => "/icon.png", :rel => "apple-touch-icon"}/
     
   %body
-
-    %nav.navbar.navbar-expand-lg.bg-body-tertiary
-      .container
-        = link_to "Cat Cafe", root_path, id: "logo", class: "navbar-brand"
-        %button.navbar-toggler{"aria-controls" => "navbarNav", "aria-expanded" => "false", "aria-label" => "Toggle navigation", "data-bs-target" => "#navbarNav", "data-bs-toggle" => "collapse", type: "button"}
-          %span.navbar-toggler-icon
-        #navbarNav.collapse.navbar-collapse
-          %ul.navbar-nav
-            %li.nav-item
-              %a.nav-link.active{"aria-current" => "page", href: "#"} Home
-            %li.nav-item
-              %a.nav-link{href: "#"} Help
-            %li.nav-item
-              %a.nav-link{href: "#"} About
-          %ul.navbar-nav.ms-auto
-            %li.nav-item
-              %a.nav-link{href: "#"} Log In
-           
+    = render 'layouts/header'      
     .container
       = yield
+      = render 'layouts/footer'
+

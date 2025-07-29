@@ -26,7 +26,8 @@ Rails.application.configure do
   end
 
   # Enable/disable asset debugging. When enabled, assets are served individually.
-  config.assets.compile = true
+  # config.assets.debug = true
+  # config.assets.digest = false
 
   # Change to :null_store to avoid any caching.
   config.cache_store = :memory_store

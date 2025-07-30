@@ -1,9 +1,6 @@
-!!! 
-%html
-  %body
-    - provide(:title, "About")
-    %title 
-      = yield(:title)
-    %h1 About Cat Cafe 
-    %p Here at Cat Cafe, all are welcome to share and exchange ideas, big or small! 
-    = link_to "Rails Tutorial", "https://www.railstutorial.org/"  
+- provide(:title, "About")
+%title 
+  = yield(:title)
+%h1 About Cat Cafe 
+%p Here at Cat Cafe, all are welcome to share and exchange ideas, big or small! 
+= link_to "Rails Tutorial", "https://www.railstutorial.org/"  

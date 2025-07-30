@@ -1,0 +1,16 @@
+%nav.navbar.navbar-expand-lg.bg-body-tertiary
+  .container
+    = link_to "Cat Cafe", root_path, id: "logo", class: "navbar-brand"
+    %button.navbar-toggler{"aria-controls" => "navbarNav", "aria-expanded" => "false", "aria-label" => "Toggle navigation", "data-bs-target" => "#navbarNav", "data-bs-toggle" => "collapse", type: "button"}
+      %span.navbar-toggler-icon
+    #navbarNav.collapse.navbar-collapse
+      %ul.navbar-nav
+        %li.nav-item
+          %a.nav-link.active{"aria-current" => "page", href: root_path} Home
+        %li.nav-item
+          %a.nav-link{href: help_path} Help
+        %li.nav-item
+          %a.nav-link{href: about_path} About
+      %ul.navbar-nav.ms-auto
+        %li.nav-item
+          %a.nav-link{href: "#"} Log In

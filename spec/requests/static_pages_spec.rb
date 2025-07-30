@@ -1,15 +1,15 @@
 require 'rails_helper'
 
 RSpec.describe "StaticPages", type: :request do
-  describe "GET /home" do
+  describe "GET root_path" do
     it "returns http success" do
-      get "/home"
+      get "/"
       expect(response).to have_http_status(:success)
       expect(response.body).to include("<title>Home</title>")
     end
   end
 
-  describe "GET /help" do
+  describe "GET help_path" do
     it "returns http success" do
       get "/help"
       expect(response).to have_http_status(:success)
@@ -17,11 +17,19 @@ RSpec.describe "StaticPages", type: :request do
     end
   end
 
-  describe "GET /about" do
+  describe "GET about_path" do
     it "returns http success" do
       get "/about"
       expect(response).to have_http_status(:success)
       expect(response.body).to include("<title>About</title>")
+    end
+  end
+
+  describe "GET contact_path" do
+    it "returns http success" do
+      get "/contact"
+      expect(response).to have_http_status(:success)
+      expect(response.body).to include ("<title>Contact</title")
     end
   end
 end

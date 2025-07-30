@@ -5,10 +5,11 @@
     %title
       = yield(:title)
     .center.jumbotron
+      = image_tag 'Lucky-cat.svg', alt: "Cute kitten", style: 'width: 200px; height: auto;'
       %h1 Cat Cafe
       %p
         This is the home page for Cat Cafe!
       %p
         An online platform for idea sharing <3
       = link_to "Sign up now!", '#', class: "btn btn-lg btn-primary"
-      = image_tag 'Lucky-cat.svg', alt: "Cute kitten", style: 'width: 200px; height: auto;'
+      

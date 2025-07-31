@@ -62,4 +62,14 @@ RSpec.describe User, type: :model do
     duplicate_user = subject.dup
     expect(duplicate_user).not_to be_valid
   end
+
+  it "is invalid without a password present (nonblank)" do
+    subject.password = subject.password_confirmation = " " * 6
+    expect(subject).not_to be_valid
+  end
+
+  it "is invalid if password is too short" do
+    subject.password = subject.password_confirmation = "a" * 5
+    expect(subject).not_to be_valid
+  end
 end

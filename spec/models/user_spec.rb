@@ -1,7 +1,7 @@
 require 'rails_helper'
 
 RSpec.describe User, type: :model do
-  subject { described_class.new(name: "Example User", email: "user@example.com") }
+  subject { described_class.new(name: "Example User", email: "user@example.com", password: "foobar", password_confirmation: "foobar") }
 
   it "is valid with valid attributes" do
     expect(subject).to be_valid
